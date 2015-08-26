@@ -9,10 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let remoteIO = RemoteIO()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        remoteIO.start()
     }
 
     override func didReceiveMemoryWarning() {
