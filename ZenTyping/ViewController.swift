@@ -7,15 +7,28 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
-    let remoteIO = RemoteIO()
+    var engine = AVAudioEngine()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        remoteIO.start()
+        
+        var input = engine.inputNode
+        var output = engine.outputNode
+        var format = input.inputFormatForBus(0)
+        var error:NSError?
+        
+        var reverb = AVAudioUnitReverb()
+        reverb.loadFactoryPreset(.LargeHall2)
+        reverb.wetDryMix = 50
+        engine.attachNode(reverb)
+        
+        engine.connect(input, to: output, format: format)
+        engine.startAndReturnError(&error)
     }
 
     override func didReceiveMemoryWarning() {

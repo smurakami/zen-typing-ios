@@ -13,10 +13,6 @@
 		372B577A1B8DC3D20053239A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 372B57791B8DC3D20053239A /* Images.xcassets */; };
 		372B577D1B8DC3D20053239A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 372B577B1B8DC3D20053239A /* LaunchScreen.xib */; };
 		372B57891B8DC3D20053239A /* ZenTypingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372B57881B8DC3D20053239A /* ZenTypingTests.swift */; };
-		372B57951B8DC5450053239A /* RemoteIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 372B57941B8DC5450053239A /* RemoteIO.m */; };
-		372B57981B8DC56E0053239A /* ASBD.c in Sources */ = {isa = PBXBuildFile; fileRef = 372B57971B8DC56E0053239A /* ASBD.c */; };
-		372B579B1B8DC6BC0053239A /* AudioBufferList.m in Sources */ = {isa = PBXBuildFile; fileRef = 372B579A1B8DC6BC0053239A /* AudioBufferList.m */; };
-		372B579E1B8DC71A0053239A /* WaveSynth.m in Sources */ = {isa = PBXBuildFile; fileRef = 372B579D1B8DC71A0053239A /* WaveSynth.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,15 +36,7 @@
 		372B57821B8DC3D20053239A /* ZenTypingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZenTypingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		372B57871B8DC3D20053239A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		372B57881B8DC3D20053239A /* ZenTypingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenTypingTests.swift; sourceTree = "<group>"; };
-		372B57921B8DC5440053239A /* ZenTyping-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZenTyping-Bridging-Header.h"; sourceTree = "<group>"; };
-		372B57931B8DC5450053239A /* RemoteIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteIO.h; sourceTree = "<group>"; };
-		372B57941B8DC5450053239A /* RemoteIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteIO.m; sourceTree = "<group>"; };
-		372B57961B8DC56E0053239A /* ASBD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASBD.h; sourceTree = "<group>"; };
-		372B57971B8DC56E0053239A /* ASBD.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ASBD.c; sourceTree = "<group>"; };
-		372B57991B8DC6BC0053239A /* AudioBufferList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioBufferList.h; sourceTree = "<group>"; };
-		372B579A1B8DC6BC0053239A /* AudioBufferList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioBufferList.m; sourceTree = "<group>"; };
-		372B579C1B8DC71A0053239A /* WaveSynth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveSynth.h; sourceTree = "<group>"; };
-		372B579D1B8DC71A0053239A /* WaveSynth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveSynth.m; sourceTree = "<group>"; };
+		37F046061B8DF08500BAB4BF /* ZenTyping-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZenTyping-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,21 +78,13 @@
 		372B576F1B8DC3D20053239A /* ZenTyping */ = {
 			isa = PBXGroup;
 			children = (
-				372B579C1B8DC71A0053239A /* WaveSynth.h */,
-				372B579D1B8DC71A0053239A /* WaveSynth.m */,
-				372B57991B8DC6BC0053239A /* AudioBufferList.h */,
-				372B579A1B8DC6BC0053239A /* AudioBufferList.m */,
-				372B57961B8DC56E0053239A /* ASBD.h */,
-				372B57971B8DC56E0053239A /* ASBD.c */,
-				372B57931B8DC5450053239A /* RemoteIO.h */,
-				372B57941B8DC5450053239A /* RemoteIO.m */,
 				372B57721B8DC3D20053239A /* AppDelegate.swift */,
 				372B57741B8DC3D20053239A /* ViewController.swift */,
 				372B57761B8DC3D20053239A /* Main.storyboard */,
 				372B57791B8DC3D20053239A /* Images.xcassets */,
 				372B577B1B8DC3D20053239A /* LaunchScreen.xib */,
 				372B57701B8DC3D20053239A /* Supporting Files */,
-				372B57921B8DC5440053239A /* ZenTyping-Bridging-Header.h */,
+				37F046061B8DF08500BAB4BF /* ZenTyping-Bridging-Header.h */,
 			);
 			path = ZenTyping;
 			sourceTree = "<group>";
@@ -235,11 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				372B57751B8DC3D20053239A /* ViewController.swift in Sources */,
-				372B57981B8DC56E0053239A /* ASBD.c in Sources */,
-				372B57951B8DC5450053239A /* RemoteIO.m in Sources */,
-				372B579B1B8DC6BC0053239A /* AudioBufferList.m in Sources */,
 				372B57731B8DC3D20053239A /* AppDelegate.swift in Sources */,
-				372B579E1B8DC71A0053239A /* WaveSynth.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +416,7 @@
 				372B578E1B8DC3D20053239A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		372B578F1B8DC3D20053239A /* Build configuration list for PBXNativeTarget "ZenTypingTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +425,7 @@
 				372B57911B8DC3D20053239A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
